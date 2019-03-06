@@ -147,9 +147,13 @@
 
 			</tbody></table>
 
-			<div id="situationPartielle">
+			<div id="situationPartielle">{{{ situationPartielle }}}
 			</div>
 
+{{#if erreurCorrectif}}
+            <div id="erreurCorrectif">{{{ erreurCorrectif }}}</div>
+
+{{/if}}
 			<div id="boutonsAvis">
 				<a class="nouvelle_recherche" href="/secavis/">
 					Nouvelle recherche
