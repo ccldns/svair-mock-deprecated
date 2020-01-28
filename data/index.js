@@ -35,7 +35,7 @@ module.exports = class Import {
 
   generateJson(data) {
     let res = {}
-    data.forEach((row) => {
+    data[0].forEach((row) => {
       let id = row.id;
       res[id] = {};
       delete row.id;
