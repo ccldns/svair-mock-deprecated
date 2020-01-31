@@ -14,6 +14,7 @@ app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(morgan('combined'))
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+app.use(express.static('public'))
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
